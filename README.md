@@ -15,12 +15,12 @@ This app will allow people to input what they want to do for the day or plan out
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:** Productivity Mobile Apps / Utility Mobile Apps
+- **Mobile:** This app would be primarily developed for mobile use. However, we are planning to implement a log in feature that will allow the user to use this application on other mobile devices if they wish to.
+- **Story:** Allows user to make tasks for the day, month, year etc. Visuals can be customized to the users liking or taste. Log in feature will be implemented in the future as well.
+- **Market:** Anybody could use this app. People with jobs or in school would use this app the most.
+- **Habit:** This app could be used all the time wether it be to stay motivated or to just plan ahead. 
+- **Scope:** As we mentioned before, the log in feature could be implemented. Users could be able to share their to do lists with others. Templates could be created by others and shared in some kind of store or main in page.
 
 ## Product Spec
 
