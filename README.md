@@ -29,47 +29,54 @@ This app will allow people to input what they want to do for the day or plan out
 **Required Must-have Stories**
 
 * [fill in your required user stories here]
-* Users can log in to access previous to do lists or the to do lists can be saved to their device
-* User can possibly choose from a template
-* User can make a new list or look at their previous ones
+* ...
 
 **Optional Nice-to-have Stories**
 
 * [fill in your required user stories here]
-* Log in features
-* calendar
+* ...
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login Screen
+  * User can login into their account
+
+* Registration Screen
+  * User can create a new account
+  * Guest/Account
+  
+* Creation 
+ * User can create a new task, edit, and delete 
+ * User can mark the task as 'done'
+ 
+* Calendar 
+  * User can visualize dates or events into calendar form
+  * User can see the "to-do" list in the calendar 
+  * Categorize to-do task by colors based on the task
+
+* Detail 
+  * User can find information and tips on how to be more productive
+
+* Settings
+  * User can configure app options
+
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* Settings
-* Calendar
-* ToDo Lists
-
-Optional:
-* Some suggestions (depending on to do lists)
-* Motivational Words
+* [fill out your first tab]
+* [fill out your second tab]
+* [fill out your third tab]
 
 **Flow Navigation** (Screen to Screen)
 
-* Login -> The user can choose either to sign up as a guest or create an account
-* Settings -> Toggle settings (the user can update their email, the font, the size of the letters)
-* Calendar -> Showing a calendar with to do lists based on the due date
-* ToDo Lists -> Our main page showing the to do list. With a bar that provided the option to add more to do lists. 
-	* The user can add the due date to each to do lists that will be show on calendar tab.
-	* The user can add priority on each tasks (P1, P2, P3). (The list will be sorted depending on the priority and due dates)
-	* The user can add category to the ToDoLists
-	
+* [list first screen here]
+   * [list screen navigation here]
+   * ...
+* [list second screen here]
+   * [list screen navigation here]
+   * ...
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
