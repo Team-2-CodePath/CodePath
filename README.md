@@ -1,7 +1,7 @@
 Original App Design Project
 ===
 
-# APP_NAME_HERE
+# To Do List
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -11,7 +11,7 @@ Original App Design Project
 
 ## Overview
 ### Description
-[Description of your app]
+This app will allow people to input what they want to do for the day or plan out the rest of year, month, etc.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
