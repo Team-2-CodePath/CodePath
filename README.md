@@ -28,13 +28,16 @@ This app will allow people to input what they want to do for the day or plan out
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
+* Users can log in to access previous to do lists or the to do lists can be saved to their device
+* User can possibly choose from a template
+* User can make a new list or look at their previous ones
 * ...
 
 **Optional Nice-to-have Stories**
 
 * [fill in your required user stories here]
-* ...
+* Log in features
+* calendar
 
 ### 2. Screen Archetypes
 
