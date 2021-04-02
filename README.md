@@ -57,14 +57,19 @@ This app will allow people to input what they want to do for the day or plan out
 * ToDo Lists
 
 Optional:
-	* Resources
+* Some suggestions (depending on to do lists)
+* Motivational Words
 
 **Flow Navigation** (Screen to Screen)
 
-* The user can choose either to sign up as a guest or create an account
-* Settings -> toggle settings (the user can update their email, the font, the size of the letters)
+* Login -> The user can choose either to sign up as a guest or create an account
+* Settings -> Toggle settings (the user can update their email, the font, the size of the letters)
 * Calendar -> Showing a calendar with to do lists based on the due date
-* ToDo Lists -> Our main page showing the to do list. With a bar that provided the option to add more to do lists. The user can add the due date to each to do lists that will be show on calendar tab
+* ToDo Lists -> Our main page showing the to do list. With a bar that provided the option to add more to do lists. 
+	The user can add the due date to each to do lists that will be show on calendar tab.
+	The user can add priority on each tasks (P1, P2, P3). (The list will be sorted depending on the priority and due dates)
+	The user can add category to the ToDoLists
+	
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
