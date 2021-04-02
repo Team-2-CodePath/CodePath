@@ -40,10 +40,10 @@ This app will allow people to input what they want to do for the day or plan out
 
 * Login Screen
   * User can login into their account
+  * User can choose to login as a guest or personal account
 
 * Registration Screen
   * User can create a new account
-  * Guest/Account
   
 * Creation 
  * User can create a new task, edit, and delete 
