@@ -55,7 +55,6 @@ This app will allow people to input what they want to do for the day or plan out
 * Settings
 * Calendar
 * ToDo Lists
-* Note (Like pop up stickers)
 
 Optional:
 	* Resources
