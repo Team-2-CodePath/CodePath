@@ -88,7 +88,7 @@ Optional:
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="https://imgur.com/DCAunbk" width=600>
+<img src="https://i.imgur.com/DCAunbk.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
