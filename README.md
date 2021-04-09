@@ -97,6 +97,23 @@ Optional:
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
+
+Profile
+| Property     		    | Type      | Description   			|
+| ------------------------- | ----------|---------------------------------------| 
+| user_id      		    | String    | unique id for each user		|
+| user_email   		    | String    | user email address			|
+| user_image   		    | File      | user profile picture		        |
+| notification 		    | Boolean   | notification can toggle (on/off)  	|
+
+Tasks
+| Property     		    | Type      | Description			    |
+| ------------------------- | ----------|-----------------------------------|
+| task_id      		    | String    | unique id for the tasks	    |
+| task_description  	    | String    | description of the tasks 	    |
+| task_start_date           | DateTime 	| start date of the tasks 	    |
+| task_due_date             | DateTime  | end date of the tasks       	    |
+
 [Add table of models]
 ### Networking
 - [Add list of network requests by screen ]
