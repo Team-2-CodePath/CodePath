@@ -113,9 +113,39 @@ Tasks
 | task_description  	    | String    | description of the tasks 	    |
 | task_start_date           | DateTime 	| start date of the tasks 	    |
 | task_due_date             | DateTime  | end date of the tasks       	    |
+| task_priority		    | String    | task priority			    |
 
-[Add table of models]
 ### Networking
+
+(Read/GET) Query all tasks based on the start date
+let query = PFQuery(className:"Tasks")
+query.whereKey("task_end_date", equalTo: currentDate)
+query.order(byDescending: "myPriority")
+query.findObjectsInBackground { (tasks: [PFObject]?, error: Error?) in
+   if let error = error { 
+      print(error.localizedDescription)
+   } else if let posts = posts {
+      print("Successfully retrieved all task due today")
+  // TODO: Do something with tasks...
+   }
+}
+
+(Read/GET) Query all tasks based on the due date
+
+
+(Create/POST) Create a new task
+let myTask = PFObject(className:"Task")
+
+(Delete) Delete task
+PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
+	if (succeeded) {
+		// task successfully deleted
+	} else {
+		// there was an error in deleting
+	}
+}
+
+
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
