@@ -123,12 +123,12 @@ let query = PFQuery(className:"Tasks")
 query.whereKey("task_end_date", equalTo: currentDate)
 query.order(byDescending: "myPriority")
 query.findObjectsInBackground { (tasks: [PFObject]?, error: Error?) in
-   if let error = error { 
-      print(error.localizedDescription)
-   } else if let posts = posts {
-      print("Successfully retrieved all task due today")
-  // TODO: Do something with tasks...
-   }
+   	if let error = error { 
+      		print(error.localizedDescription)
+   	} else if let posts = posts {
+      		print("Successfully retrieved all task due today")
+  	// TODO: Do something with tasks...
+	}
 }
 ```
 
