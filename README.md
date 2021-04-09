@@ -117,7 +117,8 @@ Tasks
 
 ### Networking
 
-(Read/GET) Query all tasks based on the start date
+(Read/GET) Query all tasks based on the end date
+```
 let query = PFQuery(className:"Tasks")
 query.whereKey("task_end_date", equalTo: currentDate)
 query.order(byDescending: "myPriority")
@@ -129,14 +130,15 @@ query.findObjectsInBackground { (tasks: [PFObject]?, error: Error?) in
   // TODO: Do something with tasks...
    }
 }
-
-(Read/GET) Query all tasks based on the due date
-
+```
 
 (Create/POST) Create a new task
+```
 let myTask = PFObject(className:"Task")
+```
 
 (Delete) Delete task
+```
 PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
 	if (succeeded) {
 		// task successfully deleted
@@ -144,7 +146,7 @@ PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
 		// there was an error in deleting
 	}
 }
-
+```
 
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
