@@ -148,3 +148,10 @@ PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
 }
 ```
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+## Video Walkthrough
+
+Here's a walkthrough of our progress on the project so far.
+
+<img src='http://g.recordit.co/ZP9RW5J7Qv.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
