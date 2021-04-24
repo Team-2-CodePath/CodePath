@@ -153,6 +153,10 @@ PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
 ## Video Walkthrough
 
 Here's a walkthrough of our progress on the project so far.
+Sprint 10
 
 <img src='http://g.recordit.co/ZP9RW5J7Qv.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+Sprint 11
+
+![](https://i.imgur.com/80Mc7XN.gif)
