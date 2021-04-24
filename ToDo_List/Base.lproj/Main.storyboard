@@ -45,16 +45,42 @@
             </objects>
             <point key="canvasLocation" x="1039.1304347826087" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Entry View Controller-->
         <scene sceneID="hhP-AU-jAm">
             <objects>
-                <viewController id="s8K-kU-VPT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="enter" id="s8K-kU-VPT" customClass="EntryViewController" customModule="ToDo_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G3I-0j-Fcu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hzv-Q3-BiC">
+                                <rect key="frame" x="20" y="54" width="374" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="fPM-UX-Ezk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gKM-Y3-T7V">
+                                <rect key="frame" x="0.0" y="158" width="414" height="704"/>
+                            </datePicker>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="B0S-uI-btq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B0S-uI-btq" firstAttribute="trailing" secondItem="hzv-Q3-BiC" secondAttribute="trailing" constant="20" id="4Rh-6C-00Z"/>
+                            <constraint firstItem="gKM-Y3-T7V" firstAttribute="top" secondItem="hzv-Q3-BiC" secondAttribute="bottom" constant="50" id="7hV-HD-7jD"/>
+                            <constraint firstItem="gKM-Y3-T7V" firstAttribute="leading" secondItem="B0S-uI-btq" secondAttribute="leading" id="QCe-2U-rJv"/>
+                            <constraint firstItem="gKM-Y3-T7V" firstAttribute="trailing" secondItem="B0S-uI-btq" secondAttribute="trailing" id="Wed-SR-Eh2"/>
+                            <constraint firstItem="hzv-Q3-BiC" firstAttribute="top" secondItem="B0S-uI-btq" secondAttribute="top" constant="10" id="fbm-vW-S3r"/>
+                            <constraint firstItem="B0S-uI-btq" firstAttribute="bottom" secondItem="gKM-Y3-T7V" secondAttribute="bottom" id="l8a-Tr-djF"/>
+                            <constraint firstItem="hzv-Q3-BiC" firstAttribute="leading" secondItem="B0S-uI-btq" secondAttribute="leading" constant="20" id="uAJ-wq-LtO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="gKM-Y3-T7V" id="ZSN-FN-tbf"/>
+                        <outlet property="textField" destination="hzv-Q3-BiC" id="D1A-gG-ot6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hg2-rb-1xP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

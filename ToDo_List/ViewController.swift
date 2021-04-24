@@ -4,7 +4,6 @@
 //
 //  Created by Geo Aldana on 4/16/21.
 //
-
 import RealmSwift
 import UIKit
 
@@ -17,11 +16,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet var table: UITableView!
     
+    private var realm = try! Realm()
     private var data = [ToDoListItem]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        data = realm.objects(ToDoListItem.self).map({ $0 })
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         table.delegate = self
         table.dataSource = self
@@ -45,9 +46,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
 
     @IBAction func didTapADDButton() {
-        
+        guard let vc = storyboard?.instantiateViewController(identifier: "enter") as? EntryViewController else{
+            return
+        }
+        vc.completionHandler = { [weak self] in
+            self?.refresh()
+        }
+        vc.title = "New Item"
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
     }
 
+    func refresh() {
+        data = realm.objects(ToDoListItem.self).map({ $0 })
+        table.reloadData()
+    }
 
 }
-
