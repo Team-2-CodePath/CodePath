@@ -86,20 +86,52 @@
             </objects>
             <point key="canvasLocation" x="1894" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--View View Controller-->
         <scene sceneID="fsI-ye-FoQ">
             <objects>
-                <viewController id="RX1-97-tsR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="View" id="RX1-97-tsR" customClass="ViewViewController" customModule="ToDo_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t76-rK-50L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GW-H1-udU">
+                                <rect key="frame" x="20" y="64" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="MJs-cW-V6p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKK-AE-aZM">
+                                <rect key="frame" x="20" y="144" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="EZp-UZ-B3E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="OpZ-tM-yRe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9GW-H1-udU" firstAttribute="leading" secondItem="OpZ-tM-yRe" secondAttribute="leading" constant="20" id="1zU-a9-SYA"/>
+                            <constraint firstItem="OpZ-tM-yRe" firstAttribute="trailing" secondItem="rKK-AE-aZM" secondAttribute="trailing" constant="20" id="MmO-z1-qMk"/>
+                            <constraint firstItem="rKK-AE-aZM" firstAttribute="top" secondItem="9GW-H1-udU" secondAttribute="bottom" constant="10" id="WZe-f6-e8L"/>
+                            <constraint firstItem="9GW-H1-udU" firstAttribute="top" secondItem="OpZ-tM-yRe" secondAttribute="top" constant="20" id="Xag-pi-gKe"/>
+                            <constraint firstItem="rKK-AE-aZM" firstAttribute="leading" secondItem="OpZ-tM-yRe" secondAttribute="leading" constant="20" id="YT4-MY-c3J"/>
+                            <constraint firstItem="OpZ-tM-yRe" firstAttribute="trailing" secondItem="9GW-H1-udU" secondAttribute="trailing" constant="20" id="cc0-Vo-weC"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="rKK-AE-aZM" id="XqI-y2-0hD"/>
+                        <outlet property="itemLabel" destination="9GW-H1-udU" id="xzQ-AS-SRg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ne4-rY-IOO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2666" y="95"/>
+            <point key="canvasLocation" x="2868" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PFF-0o-5mB">
