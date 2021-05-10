@@ -16,6 +16,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet var table: UITableView!
     
+    var color_counter = 0;
+    
     private var realm = try! Realm()
     private var data = [ToDoListItem]()
     
@@ -68,6 +70,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func changeColor(_ sender: UIButton) {
+        view.backgroundColor = UIColor.blue
+        
+        if color_counter == 0 {
+            view.backgroundColor = UIColor.gray
+            table.backgroundColor=UIColor.gray
+        } else if color_counter == 1 {
+            view.backgroundColor = UIColor.white
+            table.backgroundColor=UIColor.white
+            color_counter = 0;
+            return;
+        }
+        color_counter += 1;
+    }
+    
 
     func refresh() {
         data = realm.objects(ToDoListItem.self).map({ $0 })

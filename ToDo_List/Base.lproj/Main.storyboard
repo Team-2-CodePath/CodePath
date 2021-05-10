@@ -31,6 +31,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="TO DO LIST" id="9QK-c5-A9Z">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="vVw-f0-CuA">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="CB7-P5-1Ny">
+                                <rect key="frame" x="20" y="7" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change Color"/>
+                                <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCo-ln-DQD"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="qSM-pe-qxI">
                             <connections>
                                 <action selector="didTapADDButton" destination="BYZ-38-t0r" id="mDg-IE-hTq"/>
