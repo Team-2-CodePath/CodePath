@@ -76,7 +76,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         if color_counter == 0 {
             view.backgroundColor = UIColor.gray
-            table.backgroundColor=UIColor.gray
+            table.backgroundColor=UIColor.lightGray
         } else if color_counter == 1 {
             view.backgroundColor = UIColor.white
             table.backgroundColor=UIColor.white
